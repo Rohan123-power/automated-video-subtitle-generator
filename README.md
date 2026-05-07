@@ -37,3 +37,18 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
+
+
+## FFmpeg Installation
+
+This project requires FFmpeg.
+
+Download FFmpeg from:
+https://www.gyan.dev/ffmpeg/builds/
+
+After installation, add the FFmpeg `bin` folder to your system Environment Variables PATH.
+
+Verify installation:
+
+```bash
+ffmpeg --version
