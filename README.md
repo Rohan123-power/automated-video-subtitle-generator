@@ -1,54 +1,156 @@
-# automated-video-subtitle-generator
-AI-powered video subtitle generator using Python, Streamlit, Whisper, and FFmpeg.
-
 # Automated Video Subtitle Generator
 
-An AI-powered application that automatically generates subtitles for video files using OpenAI Whisper and FFmpeg.
+AI-powered video subtitle generator using Python, Streamlit, Whisper, and FFmpeg.
 
-## Features
+---
+
+# Features
+
 - Upload video files
-- Extract audio from video
-- Generate subtitles automatically
+- Extract audio from videos
+- Automatically generate subtitles
+- Generate `.srt` and `.vtt` subtitle files
 - Embed subtitles into videos
 - Simple Streamlit-based user interface
 
-## Technologies Used
+---
+
+# Technologies Used
+
 - Python
 - Streamlit
-- Whisper AI
+- OpenAI Whisper
 - FFmpeg
+- NumPy
 - MoviePy
 
-## Project Workflow
+---
+
+# Project Workflow
+
 1. Upload video file
-2. Extract audio from video
+2. Extract audio using FFmpeg
 3. Convert speech to text using Whisper
-4. Generate subtitle file
-5. Merge subtitles with video using FFmpeg
+4. Generate subtitle files
+5. Merge subtitles with video
+6. Download subtitled video
 
-## How to Run
+---
 
-### Install Dependencies
+# Project Structure
+
+```text
+Auto-Subtitled-Video-Generator-master/
+│
+├── pages/
+│   ├── 02_📼_Upload_Video_File.py
+│   └── local/
+│
+├── utils.py
+├── requirements.txt
+├── README.md
+├── .gitignore
+│
+└── venv/   (ignored)
+```
+
+---
+
+# Installation
+
+## 1. Clone Repository
+
+```bash
+git clone <your-github-repository-link>
+cd Auto-Subtitled-Video-Generator-master
+```
+
+---
+
+## 2. Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+Activate virtual environment:
+
+### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+---
+
+## 3. Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run Application
-```bash
-streamlit run app.py
-```
+---
 
-
-## FFmpeg Installation
+# FFmpeg Installation
 
 This project requires FFmpeg.
 
 Download FFmpeg from:
+
 https://www.gyan.dev/ffmpeg/builds/
 
-After installation, add the FFmpeg `bin` folder to your system Environment Variables PATH.
+After installation:
+
+1. Extract FFmpeg
+2. Copy the FFmpeg `bin` folder path
+3. Add it to Windows Environment Variables PATH
 
 Verify installation:
 
 ```bash
 ffmpeg --version
+```
+
+---
+
+# Run Application
+
+Run the Streamlit application using:
+
+```bash
+streamlit run "pages/02_📼_Upload_Video_File.py"
+```
+
+---
+
+# Supported Formats
+
+- MP4
+- AVI
+- MOV
+- MKV
+
+---
+
+# Output Files
+
+The application generates:
+
+- transcript.txt
+- transcript.srt
+- transcript.vtt
+- subtitled video (.mp4)
+
+---
+
+# Notes
+
+- Whisper base model is recommended for faster processing.
+- Large Whisper models provide higher accuracy but slower performance.
+- FFmpeg must be installed separately.
+
+---
+
+# Author
+
+Developed using Python, Streamlit, Whisper AI, and FFmpeg.
