@@ -216,3 +216,19 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project generated files
+*.wav
+*.mp4
+*.srt
+*.vtt
+
+# Output folders
+local/
+output/
+
+# Generated subtitle files
+final.mp4
+transcript.txt
+transcript.srt
+transcript.vtt
