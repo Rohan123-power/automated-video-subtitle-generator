@@ -1,0 +1,53 @@
+WEBVTT
+
+00:00,000 --> 00:06,520
+Day 33 of DSA series. In this video we understand the lead call problem number 42. This question
+
+00:06,520 --> 00:12,240
+is asked in midflix, flip card and google. Here, wrapping rain water means here. These
+
+00:12,240 --> 00:16,760
+are the building blocks after raining. The water will be stored between these building
+
+00:16,760 --> 00:22,200
+apps. So, by using this formula, we find the how much of total water is stored in between
+
+00:22,200 --> 00:27,160
+these building apps. Here approach is step 1. We find the lift maximum. Here lift maximum
+
+00:27,160 --> 00:33,200
+is 4. So, we take the 4 and step 2. Right maximum is 5. So, we take the all lift 4 and
+
+00:33,200 --> 00:39,840
+the maximum right is 5. And here last index 5 is, we take the index 5 is 5. So, it is
+
+00:39,840 --> 00:44,760
+the lift maximum. Lift maximum is 5 and right maximum is also 5. And step 3, we apply the
+
+00:44,760 --> 00:50,520
+formula here. Lift maximum and right maximum. Here we take the minimum. Minimum is 4. So, 4
+
+00:50,520 --> 00:57,520
+minus the height of index 0 is 4. 4 minus 4 is 0. So, here 0. Again index 1 is the height
+
+00:57,520 --> 01:04,520
+of index 2 is 2. So, here the minimum element is 4. 4 minus 2. Here the 2 is stored. And
+
+01:04,520 --> 01:12,400
+your index 2 is here. Index height of index 2 is 0. Here 4 minus 0. 4. Again here, height
+
+01:12,400 --> 01:20,000
+of index 3 is 3. So, here 4 minus 3. 1. So, here 1 is stored. I can take 4. Here, height
+
+01:20,000 --> 01:26,120
+of index 4 is 2. So, here 4 minus 2 is 2. Here 2 is stored. Maximum left is 5. And
+
+01:26,120 --> 01:31,440
+maximum right is also 5. And 5 minus 5 is 0. So, here 0 is stored. And step 4, we add
+
+01:31,440 --> 01:36,880
+the all elements. Here 2 plus 4 plus 1 plus 2 here. Total is 9. So, here the output is
+
+01:36,880 --> 01:39,640
+9. Comment code and I will send it directly in your DMs.
+
